@@ -1,0 +1,37 @@
+
+.contentInfoTasks {
+  margin-bottom: 1.5rem;
+}
+
+.contentInfoTasks .infoTasks {
+  display: flex;  
+  justify-content: space-between;
+  
+}
+
+.infoTasks .titleTaskCreated {
+  color: var(--blue);
+  font-weight: 700;
+  line-height: 17px;
+  margin-right: 0.5rem;
+}
+
+.infoTasks .qtdTaskCreated,
+.infoTasks .qtdTaskDone {
+  border-radius: 999px;
+  width: 25px;
+  height: 19px;
+  background: var(--gray-400);
+  padding: 2px 8px;
+  color: var(--gray-200);
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.infoTasks .titleTaskDone {
+  color: var(--purple);
+  font-weight: 700;
+  line-height: 17px;
+  margin-right: 0.5rem;
+}

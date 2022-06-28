@@ -1,0 +1,33 @@
+
+.content {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.content .infoTaskEmpty {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  align-items: center;
+}
+.content .infoTaskEmpty > img {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.content .infoTaskEmpty strong {
+  line-height: 22.4px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+.content .infoTaskEmpty p {
+  line-height: 22.4px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--gray-300);
+}

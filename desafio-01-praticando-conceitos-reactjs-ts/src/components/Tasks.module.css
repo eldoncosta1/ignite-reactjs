@@ -1,0 +1,81 @@
+
+.content {
+  display: flex;
+  border-radius: 8px;
+}
+
+.content  + .content  {
+  margin-top:  0.75rem;
+}
+
+.tasks {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+}
+
+.tasks label {  
+  display: flex;
+  align-items: flex-start;
+  margin-right: 0.75rem;
+}
+
+.tasks input[type="checkbox"] {
+  display: none;
+}
+
+.tasks input[type="checkbox"] + span:before{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 2px solid var(--blue);
+  content: "";
+  border-radius: 50%;  
+}
+
+.tasks input[type="checkbox"]:checked + span:before {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+  content: "\2713";  
+}
+
+.tasks .taskDone {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.tasks svg {
+  cursor: pointer;
+  color: var(--gray-300);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tasks svg:hover {
+  color: var(--gray-200)
+}
+
+.tasks span {      
+  color: var(--gray-100);
+  max-width: 632px;
+  line-height: 19px;
+  text-align: justify;
+  flex: 1;
+  
+}
+
+
+.content .infoTaskEmpty strong {
+  line-height: 22.4px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
