@@ -8,7 +8,7 @@ export function EmptyTasks() {
       <div className={styles.infoTaskEmpty}>
         <img src={clipboardImg} alt="Clipboar Empty tasks" />
         <strong>Você ainda não tem tarefas cadastradas</strong>
-        <p>Crie tarefas e organize sues itens a fazer</p>
+        <p>Crie tarefas e organize seus itens a fazer</p>
       </div>
     </div>
   );
