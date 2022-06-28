@@ -50,7 +50,7 @@ const taskList: ITask[] = [
 ];
 
 function App() {
-  const [tasks, setTasks] = useState<ITask[]>(taskList);
+  const [tasks, setTasks] = useState<ITask[]>([]);
   const [newTask, setNewTask] = useState("");
   const [tasksDoned, setTasksDoned] = useState(0);
 
