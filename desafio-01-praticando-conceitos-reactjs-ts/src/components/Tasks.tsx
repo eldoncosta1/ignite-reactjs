@@ -32,12 +32,15 @@ export function Tasks({ tasks, onDeleteTask, onStatusTask }: TaskProps) {
                 type="checkbox"
                 value="task"
                 name="task"
-                defaultChecked={checked}
+                checked={task.isDone}
                 onChange={() => handleDoneTask(task.id)}
               />
               <span></span>
             </label>
-            <span className={task.isDone ? styles.taskDone : ""}>
+            <span
+              onClick={() => handleDoneTask(task.id)}
+              className={task.isDone ? styles.taskDone : ""}
+            >
               {task.title}
             </span>
             <Trash onClick={() => handleDeleteTask(task.id)} />

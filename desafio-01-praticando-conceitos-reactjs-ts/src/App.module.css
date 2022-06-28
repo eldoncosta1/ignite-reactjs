@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 90rem;
-  width: 46rem;
+  /* width: 46rem; */
   margin: 0 auto;
   /* display: grid; */
   /* grid-template-columns: 1fr; */
@@ -48,5 +48,11 @@
 }
 
 .form button svg  {
-  margin-left: 0.5rem;
+  margin-left: 0.5rem;  
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 0 1rem 3rem;
+  }
 }
